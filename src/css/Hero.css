@@ -1,0 +1,58 @@
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideUp {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Slide Right Animation */
+@keyframes slideRight {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slideRight {
+  opacity: 0;
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+/* Wave Line Animation */
+@keyframes drawWave {
+  from {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+.animate-drawWave {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  opacity: 0;
+  animation: drawWave 2s ease-out forwards;
+}
+
+/* Delay Utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-900 { animation-delay: 0.9s; }

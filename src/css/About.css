@@ -1,0 +1,40 @@
+/* src/css/About.css */
+
+/* Slide Up */
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Slide Left */
+@keyframes slideLeft {
+  from { transform: translateX(-60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.animate-slideLeft {
+  animation: slideLeft 0.8s ease-out forwards;
+}
+
+/* Slide Right */
+@keyframes slideRight {
+  from { transform: translateX(60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.animate-slideRight {
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+/* Animation Delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-900 { animation-delay: 0.9s; }
+.delay-1000 { animation-delay: 1s; }
+
+.animate-slideLeft, .animate-slideUp, .animate-slideRight {
+  animation-fill-mode: forwards; /* ensures it stays in place after animation */
+}

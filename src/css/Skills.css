@@ -1,0 +1,99 @@
+/* === Skills Section Styling === */
+#skills {
+  background-color: #000;
+  color: #fff;
+}
+
+/* === Skill Card === */
+.skill-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05); /* subtle transparent look */
+  border: 1px solid rgba(255, 165, 0, 0.3); /* orange glow border */
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(8px);
+  will-change: transform, opacity;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+/* === Skill Image Glow === */
+.skill-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+  filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6))
+          drop-shadow(0 0 25px rgba(255, 215, 0, 0.4));
+}
+
+.skill-card:hover img {
+  filter: drop-shadow(0 0 25px rgba(255, 165, 0, 0.9))
+          drop-shadow(0 0 35px rgba(255, 215, 0, 0.7));
+}
+
+/* === Skill Name === */
+.skill-card p {
+  color: #ffb84d;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+/* === Grid Layout === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2.5rem; /* increase space between cards */
+  max-width: 1200px;
+  width: 100%;
+  justify-items: center;
+}
+
+@keyframes slideUpLeft {
+  0% { transform: translate(-40px, 40px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translate(0, 0); opacity: 1; }
+}
+
+@keyframes slideUpRight {
+  0% { transform: translate(40px, 40px); opacity: 0; }
+  80% { opacity: 1; }
+  100% { transform: translate(0, 0); opacity: 1; }
+}
+
+
+.animate-slideUpLeft {
+  animation: slideUpLeft 0.8s ease-out forwards;
+}
+
+.animate-slideUpRight {
+  animation: slideUpRight 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-900 { animation-delay: 0.9s; }
+
+
+.animate-slideUpLeft,
+.animate-slideUpRight {
+  animation-fill-mode: forwards;
+}
+
+.skill-card {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.4s ease;
+}

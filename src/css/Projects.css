@@ -1,0 +1,33 @@
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideLeft {
+  from { transform: translateX(-60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideRight {
+  from { transform: translateX(60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+.animate-slideLeft {
+  animation: slideLeft 0.8s ease-out forwards;
+}
+.animate-slideRight {
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.opacity-0 { opacity: 0; transform: translateY(20px); }
+
+.project-tagline {
+  display: -webkit-box;        /* required for line-clamp */
+  -webkit-line-clamp: 2;       /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;     /* adds ... if text exceeds */
+}

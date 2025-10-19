@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useInView from "../hooks/useInView";
-import "../css/skills.css";
+import "../css/Skills.css";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);

@@ -138,7 +138,7 @@ const Journey = () => {
           <div className="relative w-full aspect-[16/9] overflow-hidden mb-4 flex items-center justify-center">
             {item.image ? (
               <a
-                href={item.image.startsWith("http") ? item.image : `http://localhost:8080${item.image}`}
+                href={item.image.startsWith("http") ? item.image : `https://portfolio-backend-51mc.onrender.com${item.image}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full h-full block"

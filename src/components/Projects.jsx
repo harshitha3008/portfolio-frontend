@@ -70,7 +70,7 @@ const Projects = () => {
                   hover:shadow-[0_6px_25px_rgba(255,165,0,0.4)] hover:-translate-y-2 transition-all duration-300 ${cardAnimation}`}
               >
                 <img
-                  src={`https://portfolio-frontend-c2zz.onrender.com${project.imageUrl}`}
+                  src={`https://portfolio-backend-51mc.onrender.com${project.imageUrl}`}
                   alt={project.title}
                   className="rounded-lg w-full h-48 object-cover mb-4"
                 />

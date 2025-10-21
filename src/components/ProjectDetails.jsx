@@ -140,7 +140,7 @@ return (
             {/* Project Image */}
             <div className="bg-gradient-to-br from-gray-900 to-black border border-orange-400/30 rounded-xl p-4 shadow-[0_0_30px_rgba(255,165,0,0.15)] hover:border-orange-400 hover:shadow-[0_0_40px_rgba(255,165,0,0.25)] transition-all duration-300">
               <img
-                src={`https://portfolio-frontend-c2zz.onrender.com${project.imageUrl}`}
+                src={`https://portfolio-backend-51mc.onrender.com${project.imageUrl}`}
                 alt={project.title}
                 className="w-full h-auto rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300"
               />

@@ -144,7 +144,7 @@ const Journey = () => {
                 className="w-full h-full block"
               >
                 <img
-                  src={item.image.startsWith("http") ? item.image : `http://localhost:8080${item.image}`}
+                  src={item.image.startsWith("http") ? item.image : `https://portfolio-backend-51mc.onrender.com${item.image}`}
                   alt={item.title || item.institution}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />

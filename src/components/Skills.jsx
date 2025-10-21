@@ -47,7 +47,7 @@ const Skills = () => {
                 >
                   <div className="skill-image-wrapper group">
                     <img
-                      src={`https://portfolio-frontend-c2zz.onrender.com${skill.logoUrl}`}
+                      src={`https://portfolio-backend-51mc.onrender.com${skill.logoUrl}`}
                       alt={skill.name}
                       className="w-16 h-16 mb-3 object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_20px_rgba(255,165,0,0.7)]"
                     />
